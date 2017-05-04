@@ -14,3 +14,4 @@
 1. Change integration request to use Lambda Function as Integration Type
 1. Add Body Mapping Template for application/json
 1. Deploy API
+1. Enable CORS http://docs.aws.amazon.com/apigateway/latest/developerguide/how-to-cors.html

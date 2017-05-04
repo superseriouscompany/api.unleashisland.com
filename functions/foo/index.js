@@ -13,9 +13,8 @@ exports.handle = function(e, ctx) {
   };
 
   var body = 'nope'
-  var keys  = ['cool', 'nice'];
   var json  = e['body-json'];
-  data.html = keys.map((k) => {
+  data.html = Object.keys(json).map((k) => {
     return '<b>'+k+'</b><br />'+json[k]
   }).join('<br /><br />')
 
