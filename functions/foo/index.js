@@ -7,15 +7,22 @@ exports.handle = function(e, ctx) {
   var data = {
     from: 'Unleash Island <hi@mg.unleashisland.com>',
     to: 'neil.r.sarkar@gmail.com',
-    subject: 'Foobarbaz',
+    subject: 'New application',
     text: 'Testing email from this domain',
-    html: 'Testing email from this domain'
+    html: 'Overwrite me'
   };
+
+  var body = 'nope'
+  var keys  = ['cool', 'nice'];
+  var json  = e['body-json'];
+  data.html = keys.map((k) => {
+    return '<b>'+k+'</b><br />'+json[k]
+  }).join('<br /><br />')
 
   mailgun.messages().send(data, function (error, body) {
     ctx.succeed({
-      hello: e.name,
       body: body,
+      json: json,
     })
   });
 }
