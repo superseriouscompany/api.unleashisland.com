@@ -6,7 +6,7 @@ exports.handle = function(e, ctx) {
 
   var data = {
     from: 'Unleash Island <hi@mg.unleashisland.com>',
-    to: 'neil.r.sarkar@gmail.com',
+    to: 'neil.r.sarkar@gmail.com, s.gonzalez.garza@gmail.com',
     subject: 'New application',
     text: 'Testing email from this domain',
     html: 'Overwrite me'
