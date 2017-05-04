@@ -1,0 +1,9 @@
+{
+  "name": "unleashIslandSubmit",
+  "description": "Unleash Island Backend",
+  "runtime": "nodejs6.10",
+  "memory": 128,
+  "timeout": 30,
+  "role": "arn:aws:iam::958190947822:role/lambda",
+  "region": "eu-west-1"
+}
